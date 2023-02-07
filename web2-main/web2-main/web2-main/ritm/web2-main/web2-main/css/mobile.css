@@ -1,0 +1,124 @@
+@media screen and (max-width: 1225px) {
+    .addressBlock .info-block {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .addressBlock .item map img{
+        width: 100%;
+    } 
+
+    .addressBlock .info-block  .block{
+        margin-top: 24px;
+        
+    } 
+}
+
+@media screen and (max-width: 1199px) {
+    .reviews .reviewsBlock .info-block .item.slick-active{
+        opacity: 1;
+    }
+
+    .about .aboutBlock .info-block .item{
+        grid-template-columns: 1fr;
+    }
+    .about .aboutBlock .info-block .item:nth-child(2n) .text {
+        order: 1;
+    }
+    .about .aboutBlock .info-block .item:nth-child(2n) .about_img {
+        order: 2;
+    }
+}
+
+@media screen and (max-width: 995px) {
+    header .header {
+        flex-direction: column;
+    }  
+    .banner .bannerBlock{
+        min-height: 200px;          
+    }
+    .title_main{
+        font-size: 32px;
+    }
+    .title_block.white::after,
+    .title_block.white::before,
+    .title_block::after,
+    .title_block::before{
+        width: 25px;
+        height: 15px;
+    }
+    .session .sessionBlock .info-block{
+        grid-template-columns: 1fr 1fr;
+    }
+    .price .priceBlock .info-block .item{
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 758px) {
+    .banner .bannerBlock{
+        min-height: 100px;          
+    }
+    .banner .bannerBlock h1 {
+        font-family: 'El Messiri', sans-serif;
+        font-size: 44px;
+    }
+    .title_main{
+        font-size: 28px;
+    }
+    .addressSection .info-block{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .banner .bannerBlock{
+        min-height: 80px;          
+    }
+}
+
+@media screen and (max-width: 580px){
+    header .header nav ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+    }
+    .reviews .reviewsBlock .info-block{
+        margin: 25px;
+    }
+    footer .footer{
+        padding: 18px;
+    }
+    .title_block.white::after,
+    .title_block.white::before{
+        width: 25px;
+        height: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .session .sessionBlock .info-block .item:first-of-type{
+        grid-row: 1;
+    }
+}
+
+@media screen and (max-width: 453px){
+    .title_main{
+        font-size: 22px;
+    }
+    .title_block.white::after,
+    .title_block.white::before{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width: 403px){
+    .banner .bannerBlock{
+        min-height: 50px;        
+    }
+    .banner .bannerBlock h1 {
+        font-family: 'El Messiri', sans-serif;
+        font-size: 40px;
+    }
+}
