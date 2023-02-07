@@ -1,9 +1,0 @@
-@media screen and (max-width: 1199px) {
-    .addressSection .info-block {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .addressSection .info-block .item.map {
-        grid-row: span 1;
-        height: 350px;
-    }
-}
