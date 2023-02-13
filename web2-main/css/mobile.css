@@ -1,0 +1,211 @@
+@media screen and (max-width: 1408px) {
+    .blogItemSection .info-block{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1225px) {
+    .addressBlock .info-block {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .addressBlock .item map img{
+        width: 100%;
+    } 
+
+    .addressBlock .info-block  .block{
+        margin-top: 24px;
+        
+    } 
+    .blogItemSection .info-block{
+        grid-template-columns: 1fr;
+        
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .reviews .reviewsBlock .info-block .item.slick-active{
+        opacity: 1;
+    }
+
+    .about .aboutBlock .info-block .item{
+        grid-template-columns: 1fr;
+    }
+    .about .aboutBlock .info-block .item:nth-child(2n) .text {
+        order: 1;
+    }
+    .about .aboutBlock .info-block .item:nth-child(2n) .about_img {
+        order: 2;
+    }
+}
+
+@media screen and (max-width: 995px) {
+    header .header {
+        flex-direction: column;
+    }  
+    .banner .bannerBlock{
+        min-height: 200px;          
+    }
+    .title_main{
+        font-size: 32px;
+    }
+    .title_block.white::after,
+    .title_block.white::before,
+    .title_block::after,
+    .title_block::before{
+        width: 25px;
+        height: 15px;
+    }
+    .session .sessionBlock .info-block{
+        grid-template-columns: 1fr 1fr;
+    }
+    .price .priceBlock .info-block .item{
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .blogItemSection .info-block{        
+        padding-left: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 758px) {
+    .banner .bannerBlock{
+        min-height: 100px;          
+    }
+    .banner .bannerBlock h1 {
+        font-family: 'El Messiri', sans-serif;
+        font-size: 44px;
+    }
+    .title_main{
+        font-size: 28px;
+    }
+    .addressSection .info-block{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .banner .bannerBlock{
+        min-height: 80px;          
+    }
+}
+
+@media screen and (max-width: 580px){
+    header .header nav ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+    }
+    .reviews .reviewsBlock .info-block{
+        margin: 25px;
+    }
+    footer .footer{
+        padding: 18px;
+    }
+    .title_block.white::after,
+    .title_block.white::before{
+        width: 25px;
+        height: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .session .sessionBlock .info-block .item:first-of-type{
+        grid-row: 1;
+    }
+}
+
+@media screen and (max-width: 453px){
+    .title_main{
+        font-size: 22px;
+    }
+    .title_block.white::after,
+    .title_block.white::before{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width: 408px){
+    .banner .bannerBlock{
+        min-height: 50px;        
+    }
+    .banner .bannerBlock h1 {
+        font-family: 'El Messiri', sans-serif;
+        font-size: 40px;
+    }
+    .session .sessionBlock .info-block .item{
+        font-size: 20px;  
+        padding: 20px 30px;     
+    }   
+    .title_block::after,
+    .title_block::before{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 408px){
+    .title_block::after,
+    .title_block::before{
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    .newsSection .info-block .item .titleNews{
+        font-family: 'El Messiri', sans-serif;
+        font-size: 18px;
+        font-weight: bold;        
+    }
+    
+}
+
+@media screen and (max-width: 355px){
+    header .header nav ul{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    .session .sessionBlock .info-block .item{
+        font-size: 15px;  
+        padding: 15px 25px;     
+    } 
+    footer .footer{
+        padding: 10px;
+        
+    }
+    
+
+}
+
+@media screen and (max-width: 591px){
+    .newsItemSection .info-block{
+        gap: 80px;
+    }
+    .newsItemSection .info-block .item .titleNews{
+        font-size: 20px;        
+    }
+    .newsItemSection .info-block .item{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+}
+@media screen and (max-width: 509px){
+    .title_block::after,
+    .title_block::before{
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}
+@media screen and (max-width: 362px){
+    .title_block::after,
+    .title_block::before{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .title_main{
+        font-size: 18px;
+    }
+    
+}

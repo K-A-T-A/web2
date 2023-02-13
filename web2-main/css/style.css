@@ -1,0 +1,555 @@
+:root{
+    --bg:#162831;
+    --white:#fff;
+    --acent:#018ABE;
+    --blue05: hsla(197, 49%, 73%, 0.5);
+}
+
+html, 
+body{
+    font-family: sans-serif;
+    background-color: var(--bg);
+    color: var(--white);
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+header .header {
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px calc(1.5rem * 0.5);
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+    cursor: pointer;
+}
+
+header .header nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+    font-size: 14px;
+}
+
+header .header .logo{
+    width: 60px;
+    height: 60px;
+}
+header .header .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: left;
+}
+
+.btnA {
+    padding: 9px 15px;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.btnA_blue {
+    background-color: var(--acent);
+}
+
+.btnA_white {
+    background-color: var(--white);
+    color: var(--acent)
+}
+
+section.banner {
+    font-family: 'El Messiri', sans-serif;
+    font-weight: bold; 
+    margin-top: 20px;
+    margin: 20px calc(1.5rem * 0.5) 0;
+}
+
+.banner .bannerBlock span {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.banner .bannerBlock h1 {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 64px;
+}
+
+.banner .bannerBlock {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 136px 30px 210px;
+    background-image: url('../img/women.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner .bannerBlock::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--blue05);
+    border-radius: 10px;
+}
+
+.banner .bannerBlock h1,
+.banner .bannerBlock span  {
+    max-width: 587px;
+    text-align: center;
+    z-index: 1;
+}
+
+.title_block{
+    position: relative;
+}
+
+.title_block.white::after,
+.title_block.white::before,
+.title_block::after,
+.title_block::before{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 14px;
+    top: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;   
+    
+}
+
+.title_block.white::after,
+.title_block.white::before{
+    background-image: url('../img/leaf-white.svg');
+}
+
+.title_block::after,
+.title_block::before{
+    background-image: url('../img/leaf-blue.svg');
+}
+
+.title_block::before{    
+    left: -94px;     
+    transform: translateY(-50%);   
+}
+
+.title_block::after{
+    right: -94px;
+    transform: translateY(-50%) scale(-1, 1);
+}
+
+.title_main{
+    display:flex;
+    justify-content: center;
+    font-family: 'El Messiri', sans-serif;
+    font-weight: bold;
+    font-size: 42px;
+    margin-bottom: 100px;
+}
+
+section{
+    padding: 75px 0;
+}
+
+section.banner{
+    padding-top: 0;
+}
+
+.session .sessionBlock .info-block{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+
+.session .sessionBlock .info-block .item{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 30px 40px;
+    min-height: 260px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.session .sessionBlock .info-block .item::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--acent);
+    opacity: .5;
+}
+
+.session .sessionBlock .info-block .item span{
+    position: relative;
+}
+
+.session{
+    font-family: 'El Messiri', sans-serif;
+    font-weight: bold;     
+}
+
+.session .sessionBlock .info-block .item:first-of-type{
+    border-bottom: 7px solid var(--acent);
+    grid-row: 1/3;
+}
+
+
+.reviews .reviewsBlock .info-block .item{     
+    padding: 50px 60px;
+    background-color: var(--acent);
+    border-radius: 10px;   
+    opacity: .3; 
+}
+
+
+/* .reviews .reviewsBlock .info-block{    
+    width: 636px;
+    height: 350px;    
+} */
+.reviews .reviewsBlock .info-block .item.active{
+    opacity: 1;
+}
+.reviews .reviewsBlock .info-block .item .name{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.reviews .reviewsBlock .info-block .item .text p{
+    margin-bottom: 25px;
+    font-size: 14px;     
+    font-weight: 100;
+    
+}
+
+.reviews .reviewsBlock .info-block .item .text p:last-of-type{
+    margin-bottom: 0;
+}
+
+.about .aboutBlock .info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.about .aboutBlock .info-block .item .text {
+    padding: 17px 0;
+}
+.about .aboutBlock .info-block .item .text .variants {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.about .aboutBlock .info-block .item .text .about_text {
+    font-weight: 300;
+}
+.about .aboutBlock .info-block .item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 84px;
+}
+.about .aboutBlock .info-block .item .about_img img {
+    width: 100%;
+    border-radius: 10px;
+}
+.about .aboutBlock .info-block .item:nth-child(2n) .text {
+    order: 2;
+}
+.about .aboutBlock .info-block .item:nth-child(2n) .about_img {
+    order: 1;
+}
+
+.price .priceBlock .info-block .item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 130px;
+    align-items: center;
+}
+
+.price .priceBlock .item .imgBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.price .priceBlock .item .imgBlock img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.price .priceBlock .item .imgBlock p{
+    font-family: 'El Messiri', sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+
+} 
+.price .priceBlock .info-block .item .prices {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.price .priceBlock .info-block .item .prices .variant {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 23px;
+    padding-left: 40px;
+    font-size: 18px;
+}
+.price .priceBlock .info-block .item .prices .variant::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 9px;
+    background-image: url('../img/leaf-blue.svg');
+    background-size: contain;
+    transform: translateY(50%);
+}
+
+.price .priceBlock .info-block .item .prices .variant .money {
+    font-family: 'El Messiri', sans-serif;
+}
+
+.addressSection .info-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-auto-rows: minmax(390px, auto); */
+    column-gap: 48px;
+    row-gap: 24px;
+}
+.addressSection .info-block .item {
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--acent);
+}
+.addressSection .info-block .item.map .img {
+    width: 100%;
+    height: 100%;
+}
+.addressSection .info-block .item.map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.addressSection .info-block .item.map {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+.addressSection .info-block .item:not(.map) {
+    padding: 35px 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+.addressSection .info-block .item .address {
+    margin-bottom: 20px;
+    font-family: 'El Messiri', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+.addressSection .info-block .item .info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.addressSection .info-block .item .info .block {
+    display: flex;
+    gap: 20px;
+}
+
+.buttena{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 15px;
+    gap: 10px;
+    position: absolute;
+    width: 155px;
+    height: 36px;
+    border-radius: 3px;   
+    margin-left: 45px; 
+}
+
+.buttenb{
+    background-color: var(--white);
+    color: #018ABE;
+    font-family: 'El Messiri';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+footer .footer{
+    display:flex;
+    justify-content: space-between;   
+    padding: 30px 0;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: 'El Messiri';
+}
+
+
+.newsSection .info-block{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, auto));
+    grid-auto-rows: minmax(260px, auto);
+    gap: 24px;
+}
+
+.newsSection .info-block .item{
+    position: relative;
+    background-image: url('../img/women2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 30px 35px;
+    overflow: hidden;
+}
+
+.newsSection .info-block .item::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--acent);
+    opacity: .5;
+}
+
+.newsSection .info-block .item .date-title{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.newsSection .info-block .item .dateMain{
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: var(--acent);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.newsSection .info-block .item .titleNews{
+    font-family: 'El Messiri', sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.footer.line{
+    border-top: 1px solid var(--white);
+ 
+}
+
+.header.line{
+    border-bottom: 1px solid var(--white); 
+      
+}
+
+.newsItemSection .newsItemBlock{
+    padding: 0;
+}
+
+.newsItemSection .info-block{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    gap: 100px;
+}
+
+.newsItemSection .info-block .item.imgNews img{
+    width: 100%;
+    border-radius: 10px;    
+}
+
+.newsItemSection .info-block .item .date{
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: var(--acent);
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 45px;
+}
+
+.newsItemSection .info-block .item .titleNews{
+    font-family: 'El Messiri';
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.blogItemSection .info-block{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    gap: 100px;
+    border: 2px solid var(--acent);
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-bottom: 45px;    
+    border-radius: 10px;   
+    margin-bottom: 45px; 
+}
+
+.blogtemSection .info-block .item.imgBlog img{
+    width: 100%;
+    border-radius: 10px;    
+}
+
+.blogItemSection .info-block .item .date{
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: var(--acent);
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 45px;
+}
+
+.blogItemSection .info-block .item .titleBlog{
+    font-family: 'El Messiri';
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.blogItemSection .info-block .item .read{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--acent);
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 45px;
+}
